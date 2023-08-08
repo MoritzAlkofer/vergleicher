@@ -6,12 +6,15 @@ Repro to compare different spike detection models on the following metrics
 4. PR AUC
 
 To run:
+
 0. Create a folder in /Backstage using your_models_name
 
 1. create model predictions
-1.1. create predictions for all event_files in /Judge/testset_bonobo_events.csv
+
+1.1  create predictions for all event_files in /Judge/testset_bonobo_events.csv
      store them in a .csv with columns [event_file,preds]
      store the file as /Backstage/your_models_name/bonobo_pred.csv
+
 1.2   create continious predictions for all eeg_files in /Judge/testset_controls.csv
      create the folder /Backstage/your_models_name/Time_series_pred
      store the predictions in this folder using a numpy array of shape [n-steps,]
