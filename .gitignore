@@ -1,5 +1,0 @@
-# Ignore everything in model folder of Backstage
-Backstage/SpikeTransformer/*
-
-# Unignore Results folder of model
-!Backstage/SpikeTransformer/Results/
